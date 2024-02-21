@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Sudoku;
+
+var sl = new SetLayout();
+sl.Set();
+
+Console.ReadLine();
