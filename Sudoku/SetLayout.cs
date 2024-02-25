@@ -38,7 +38,16 @@ namespace Sudoku
             int x = Console.CursorLeft;
             int y = Console.CursorTop;
             Console.CursorTop = Console.WindowTop + Console.WindowHeight - 1;
-            Console.Write("");
+
+            var menu = new StringBuilder();
+            menu.Append("New: F1");
+            menu.Append("\t\t");
+            menu.Append("Refresh: F5");
+            menu.Append("\t\t");
+            menu.Append("Resolve: F9");
+            menu.Append("\t\t");
+
+            Console.Write(menu);
             Console.SetCursorPosition(x, y);
         }
     }
